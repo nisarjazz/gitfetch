@@ -1,6 +1,7 @@
 #!/bin/bash
 echo "Checking Mail Server #2"
 echo "checking for ssh push"
+echo "checking for PR"
 echo "QUIT" | nc -w 5 smtp.gmail.com 465 > /dev/null 2>&1
 if [ $? == 0 ]; then
   echo "mail server #1 is UP"
